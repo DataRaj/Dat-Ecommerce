@@ -5,8 +5,9 @@ export default function ReturnRefundPolicy() {
       <section>
         <h3 className="p-2 text-2xl">Handcrafted Products</h3>
         <p className="p-2">
-          At Shiven Ecommerce service, we take pride in offering multibenificial items,
-          mainly every item is packed out of the farm from original farmers and agriculture.
+          At Dat Ecommerce service, we take pride in offering multibenificial
+          items, mainly every item is packed out of the farm from original
+          farmers and agriculture.
         </p>
       </section>
 
@@ -16,7 +17,7 @@ export default function ReturnRefundPolicy() {
           To ensure the longevity of your product, we recommend following the
           care instructions provided with the product. If you have any
           questions, please contact us at{" "}
-          <a href="mailto:shivenecom.in">shivenecom.in</a>.
+          <a href="mailto:Datecom.in">Datecom.in</a>.
         </p>
       </section>
 
@@ -48,8 +49,8 @@ export default function ReturnRefundPolicy() {
         <ol className="list-disc p-2">
           <li>
             Send an email to{" "}
-            <a href="mailto:info@shiven.in">info@shivenecom.in</a> along with a
-            photo of the damaged product.
+            <a href="mailto:d.a.dhadas@gmail.in">d.a.dhadas@gmail.com</a> along
+            with a photo of the damaged product.
           </li>
           <li>
             A Returns and Exchanges form is also required with necessary

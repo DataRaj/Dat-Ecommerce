@@ -70,7 +70,7 @@ export default function Footer() {
             <h2 className="mb-3 text-lg font-bold">Contact Us</h2>
             <div className="mb-3 flex gap-2 text-sm hover:underline">
               <MailIcon size={16} />
-              <Link href="mailto:info@shivenecom.com">info@shivenecom.com</Link>
+              <Link href="mailto:info@datecom.com">info@datecom.com</Link>
             </div>
             <div className="mb-3 flex gap-2 text-sm hover:underline">
               <PhoneCallIcon size={16} />
@@ -117,7 +117,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h2 className="mb-3 text-xl font-bold">Shiven Ecommerce</h2>
+            <h2 className="mb-3 text-xl font-bold">Dat Ecommerce</h2>
             <a
               href="https://maps.app.goo.gl/Wowk2PFxgum97Zbr8"
               target="_blank"
@@ -130,7 +130,7 @@ export default function Footer() {
         </div>
       </section>
       <p className="mt-10 text-center text-sm">
-        © {new Date().getFullYear()} shivenecoms
+        © {new Date().getFullYear()} datecoms
       </p>
     </footer>
   );

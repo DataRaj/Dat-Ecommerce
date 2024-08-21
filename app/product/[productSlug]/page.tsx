@@ -28,7 +28,6 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product: Product = await getProductBySlug(params.productSlug);
-  console.log("🚀 ~ file: page.tsx ~ line 64 ~ generateMetadata ~ product", product);
   return {
     title: product.name,
     alternates: {
@@ -40,7 +39,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const ProductPage = async ({ params }: Props) => {
   const product: Product = await getProductBySlug(params.productSlug);
-  console.log("🚀 ~ file: page.tsx ~ line 76 ~ ProductPage ~ product", product);
   const jsonLd = {
     "@context": "", //https://www.oxabags.com/
     "@type": "Product",
@@ -49,7 +47,7 @@ const ProductPage = async ({ params }: Props) => {
     description: product.features,
     brand: {
       "@type": "Brand",
-      name: "Shiven-Ecom",
+      name: "Dat-Ecom",
     },
   };
 

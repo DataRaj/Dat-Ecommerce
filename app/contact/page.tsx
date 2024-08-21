@@ -5,10 +5,9 @@ export const metadata: Metadata = {
 };
 
 export default function Contact() {
-  const companyName = "Shiven Ecom";
-  const ownerName = "Vanktesh";
-  const address =
-    "Ulwe, Navi Mumbai, Maharashtra, India, 410206";
+  const companyName = "Dattaraj's Ecom Store";
+  const ownerName = "Dattaraj";
+  const address = "Navi Mumbai, Maharashtra, India, 410206";
   const phoneNumber = "9082337115";
   const email = "dhadas808@yahoo.com";
 

@@ -17,10 +17,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.shivenecom.com"), //https://www.oxabags.com/
+  metadataBase: new URL("https://www.Dat-ecom.com"),
   title: {
-    template: "%s | Shiven-Ecommerce",
-    default: "Shiven-Ecommerce",
+    template: "%s | Dat-Ecommerce",
+    default: "Dat-Ecommerce",
   },
   description:
     "Manufacturer, Wholesaler & Exporter of Jute bags, Cotton Bag for Corporate Events & Exhibitions",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   category: "Shopping",
   openGraph: {
-    title: "Shiven-Ecom",
+    title: "Dat-Ecom",
   },
 };
 

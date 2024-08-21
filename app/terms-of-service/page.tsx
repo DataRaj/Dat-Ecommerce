@@ -6,8 +6,8 @@ export default function TermsOfService() {
         <h3 className="p-2 text-2xl">1. Acceptance of Terms</h3>
         <p className="p-2">
           By accessing our website, you agree to be bound by our terms of
-          service. If you do not agree with our terms of service, you may not use
-          our
+          service. If you do not agree with our terms of service, you may not
+          use our
         </p>
       </section>
 
@@ -24,9 +24,9 @@ export default function TermsOfService() {
         <h3 className="p-2 text-2xl">3. Intellectual Property Rights</h3>
         <p className="p-2">
           All content, trademarks, logos, and intellectual property displayed on
-          shivenecom.com are the property of Owner-Name. You may not use,
-          reproduce, or distribute any content from our website without prior
-          written permission.
+          datecom are the property of Owner-Name. You may not use, reproduce, or
+          distribute any content from our website without prior written
+          permission.
         </p>
       </section>
 
@@ -34,11 +34,11 @@ export default function TermsOfService() {
         <h3 className="p-2 text-2xl">4. Payment Processing</h3>
         <p className="p-2">
           We utilize Razorpay, a third-party payment gateway, for processing
-          payments on our website. By making a purchase through shivenecom.com, you
+          payments on our website. By making a purchase through datecom.com, you
           agree to abide by Razorpay&apos;s terms and conditions.
         </p>
         <p className="p-2">
-          Shiven Ecommerce shall not be liable for any issues, disputes, or
+          Dat Ecommerce shall not be liable for any issues, disputes, or
           discrepancies arising from payment processing through Razorpay. Please
           refer to Razorpay&apos;s policies and procedures for more information.
         </p>
@@ -52,7 +52,7 @@ export default function TermsOfService() {
           reliability of any content.
         </p>
         <p className="p-2">
-          Shiven Ecommerce shall not be liable for any direct, indirect,
+          Dat Ecommerce shall not be liable for any direct, indirect,
           incidental, special, or consequential damages arising out of or in any
           way connected with the use of our website or services.
         </p>

@@ -23,7 +23,7 @@ export async function POST(request: Request) {
     customer: {
       name: body.name,
       email: body.email,
-      
+
       contact: body.phoneNumber,
       shipping_address: {
         line1: body.addressLine,

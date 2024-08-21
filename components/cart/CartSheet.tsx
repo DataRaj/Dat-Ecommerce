@@ -1,3 +1,4 @@
+// components/CardSheet.tsx
 "use client";
 import {
   Sheet,
@@ -11,7 +12,7 @@ import {
 import { Actions, Product, State, useCartStore } from "@/store/useCartStore";
 import { ShoppingCartIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "../ui/button";
 import CartProductCard from "./CartProductCard";
 
@@ -20,6 +21,25 @@ export default function CartSheet() {
     useCartStore();
   const [open, setOpen] = useState(false);
   const router = useRouter();
+
+  // Check if user is authenticated
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  useEffect(() => {
+    const checkAuth = async () => {
+      const response = await fetch("/api/auth/check");
+      const data = await response.json();
+      setIsAuthenticated(data.isAuthenticated);
+    };
+    checkAuth();
+  }, []);
+
+  const handleProceedToCheckout = () => {
+    if (!isAuthenticated) {
+      router.push("/login");
+    } else {
+      router.push("/cart");
+    }
+  };
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -53,10 +73,7 @@ export default function CartSheet() {
         <SheetFooter>
           <Button
             variant="default"
-            onClick={() => {
-              setOpen(false);
-              router.push("/cart");
-            }}
+            onClick={handleProceedToCheckout}
             className="w-full"
             disabled={cart.length === 0}
           >

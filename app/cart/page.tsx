@@ -1,3 +1,4 @@
+// pages/cart/page.tsx
 "use client";
 import CartOrderTable from "@/components/cart/CartOrderTable";
 import { Button } from "@/components/ui/button";
@@ -17,6 +18,7 @@ import { Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import { useEffect } from "react";
 
 const formSchema = z.object({
   name: z
@@ -52,6 +54,26 @@ export default function CartPage() {
       country: "India",
     },
   });
+
+  useEffect(() => {
+    const preloadUserData = async () => {
+      const response = await fetch("/api/user/data");
+      const data = await response.json();
+      if (data.user) {
+        form.reset({
+          name: data.user.name,
+          email: data.user.email,
+          phoneNumber: data.user.phoneNumber,
+          addressLine: data.user.addressLine,
+          city: data.user.city,
+          state: data.user.state,
+          zipcode: data.user.zipcode,
+          country: data.user.country,
+        });
+      }
+    };
+    preloadUserData();
+  }, []);
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     const cartProducts = cart.map((item) => ({

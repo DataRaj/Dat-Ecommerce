@@ -12,7 +12,7 @@ export default async function Header() {
       <nav className="flex flex-row items-center gap-6">
         <MenuSheet categories={categories} />
         <Link className="mx-auto md:mx-0" href="/">
-          <h1 className="text-2xl font-bold italic">Shiven-Ecom</h1>
+          <h1 className="text-2xl font-bold italic">Dat-Ecom</h1>
         </Link>
         <Navbar categories={categories} />
         <div className="ml-0 flex flex-row gap-2 md:ml-auto">

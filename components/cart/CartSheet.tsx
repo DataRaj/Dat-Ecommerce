@@ -23,22 +23,22 @@ export default function CartSheet() {
   const router = useRouter();
 
   // Check if user is authenticated
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  useEffect(() => {
-    const checkAuth = async () => {
-      const response = await fetch("/api/auth/check");
-      const data = await response.json();
-      setIsAuthenticated(data.isAuthenticated);
-    };
-    checkAuth();
-  }, []);
+  // const [isAuthenticated, setIsAuthenticated] = useState(false);
+  // useEffect(() => {
+  //   const checkAuth = async () => {
+  //     const response = await fetch("/api/auth/check");
+  //     const data = await response.json();
+  //     setIsAuthenticated(data.isAuthenticated);
+  //   };
+  //   checkAuth();
+  // }, []);
 
   const handleProceedToCheckout = () => {
-    if (!isAuthenticated) {
-      router.push("/login");
-    } else {
+    // if (!isAuthenticated) {
+    //   router.push("/login");
+    // } else {
       router.push("/cart");
-    }
+    // }
   };
 
   return (
